@@ -1,0 +1,593 @@
+:root {
+    --black-color: #141414;
+    --red-color: #f5112c;
+    --blue-color: #2429ff;
+    --grey-color: #f5f5f5;
+    --grey-line-color: #e9e9e9;
+}
+
+@font-face {
+    font-family: "Source Serif Pro";
+    src: url("/fonts/SourceSerifPro-Light.woff2") format("woff2"),
+        url("/fonts/SourceSerifPro-Light.woff") format("woff");
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Source Serif Pro";
+    src: url("/fonts/SourceSerifPro-Regular.woff2") format("woff2"),
+        url("/fonts/SourceSerifPro-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Source Serif Pro";
+    src: url("/fonts/SourceSerifPro-SemiBold.woff2") format("woff2"),
+        url("/fonts/SourceSerifPro-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Source Serif Pro";
+    src: url("/fonts/SourceSerifPro-Bold.woff2") format("woff2"),
+        url("/fonts/SourceSerifPro-Bold.woff") format("woff");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    font-family: "Source Serif Pro", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #fff;
+    color: #212121;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 130px;
+    max-width: 1440px;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    background: url(/img/bg.png) no-repeat #f8f8f8;
+    background-position: top right;
+}
+
+.btn {
+    position: relative;
+    padding-bottom: 5px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 36px;
+    letter-spacing: 3.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*Header*/
+.header__container {
+    display: flex;
+    padding: 0;
+    color: #878787;
+}
+
+.header__logo {
+    margin-right: 80px;
+}
+
+.nav {
+    padding-top: 34px;
+    margin-right: 70px;
+}
+
+.nav-list {
+    position: relative;
+    display: flex;
+}
+
+.nav-list::before {
+    position: absolute;
+    content: "";
+    height: 6px;
+    top: 8px;
+    left: -12px;
+    width: 459px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.nav-item {
+    margin-right: 88px;
+    z-index: 2;
+}
+
+.header__phone {
+    padding-top: 34px;
+    font-size: 16px;
+}
+
+/*Hero*/
+.hero__container {
+    display: flex;
+    padding-bottom: 88px;
+}
+
+.hero__info {
+    margin-right: 127px;
+    padding-top: 227px;
+    padding-left: 24px;
+}
+
+.hero__title {
+    margin-bottom: 23px;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.hero__descr {
+    position: relative;
+    margin-bottom: 29px;
+    width: 300px;
+}
+
+.hero__img {
+    padding-top: 83px;
+}
+
+.hero__btn::before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 23px;
+    height: 2px;
+    width: 150px;
+    background-color: #000;
+    z-index: 1;
+}
+
+.hero__btn::after {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 113px;
+    height: 2px;
+    width: 26px;
+    background-color: #000;
+    z-index: 1;
+}
+
+/*Portfolio*/
+.portfolio {
+    background: url(/img/2section-leaves.png) no-repeat 96px 200px #fff;
+}
+
+.portfolio__container {
+    padding: 277px 165px 155px 165px;
+    align-items: flex-start;
+}
+
+.portfolio__list {
+    display: flex;
+    width: 82vw;
+}
+
+.portfolio__img {
+    margin-bottom: 9px;
+}
+
+.portfolio__title {
+    position: relative;
+    margin-bottom: 95px;
+}
+
+.portfolio__title::before {
+    position: absolute;
+    content: "";
+    top: -137px;
+    left: 554px;
+    width: 2px;
+    height: 38px;
+    background-color: #cb98a8;
+}
+
+.portfolio__item-1 {
+    padding-top: 172px;
+}
+
+.portfolio__item-title {
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #343434;
+}
+
+.portfolio__item-descr {
+    font-weight: 700;
+}
+
+.portfolio__item-2 {
+    margin-bottom: 94px;
+}
+
+.portfolio__item-4 {
+    padding-top: 200px;
+}
+
+.portfolio__details {
+    padding: 0;
+    background: url(/img/portfolio-detailed.png) no-repeat #fff;
+}
+
+/*Portfolio-detailed*/
+.portfolio-detailed {
+    background: url('/img/portfolio-detailed.png') no-repeat #fff;
+    background-size: 78.5%;
+}
+
+.portfolio-detailed__container {
+    padding: 114px 130px 300px 641px;
+}
+
+.portfolio-detailed__title {
+    padding-top: 27px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.portfolio-detailed__descr {
+    position: relative;
+    margin-bottom: 34px;
+    width: 270px;
+}
+
+.portfolio-detailed__descr::before {
+    position: absolute;
+    content: url(/img/detailed-portfolio-leaf.png);
+    top: -84px;
+    left: 570px;
+}
+
+.portfolio-detailed__descr::after {
+    position: absolute;
+    content: url(/img/pdf.png);
+    top: 105px;
+    left: 197px;
+}
+
+.portfolio-detailed__btn::before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 23px;
+    height: 2px;
+    width: 174px;
+    background-color: #000;
+    z-index: 1;
+}
+
+.portfolio-detailed__btn::after {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: 138px;
+    height: 2px;
+    width: 26px;
+    background-color: #000;
+    z-index: 1;
+}
+
+/*About*/
+.about {
+    background: url(/img/about-bg.png) no-repeat 0px 20px #fff;
+}
+
+.about__container {
+    padding-top: 154px;
+    padding-bottom: 161px;
+}
+
+.about__title {
+    position: relative;
+    margin-bottom: 219px;
+}
+
+.about__title::before {
+    position: absolute;
+    content: "";
+    top: -139px;
+    left: 598px;
+    width: 2px;
+    height: 38px;
+    background-color: #cb98a8;
+}
+
+.about__info {
+    padding: 0 129px 20px 749px;
+    font-size: 13px;
+}
+
+.about__descr {
+    margin-bottom: 30px;
+}
+
+.about__btn {
+    position: relative;
+    margin-top: 14px;
+}
+
+.about__btn::before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 23px;
+    height: 2px;
+    width: 219px;
+    background-color: #000;
+    z-index: 1;
+}
+
+.about__btn::after {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 183px;
+    height: 2px;
+    width: 26px;
+    background-color: #000;
+    z-index: 1;
+}
+
+/*Price*/
+.price {
+    background: url(/img/price-leaves.png) no-repeat 124px 56px #fff;
+}
+
+.price__container {
+    padding-top: 231px;
+}
+
+.price__title {
+    position: relative;
+    margin-bottom: 188px;
+}
+
+.price__title::before {
+    position: absolute;
+    content: "";
+    top: -139px;
+    left: 589px;
+    width: 2px;
+    height: 38px;
+    background-color: #cb98a8;
+}
+
+.price__quantity {
+    color: #8eb574;
+    font-size: 18px;
+}
+
+.price__info {
+    display: flex;
+    padding-left: 36px;
+    text-align: center;
+}
+
+.price__img {
+    margin-bottom: 26px;
+}
+
+.price__item-title {
+    margin-bottom: 46px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #8eb574;
+}
+
+.price__item-title-1 {
+    position: relative;
+    padding-right: 66px;
+}
+
+.price__item-title-1::before {
+    position: absolute;
+    content: "";
+    top: 38px;
+    left: 187px;
+    width: 20px;
+    height: 2px;
+    background-color: #8eb574;
+}
+
+.price__item-title-1::after {
+    position: absolute;
+    content: "30 000 рублей";
+    top: 28px;
+    left: 218px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #8eb574;
+}
+
+.price__item-title-2 {
+    position: relative;
+    padding-right: 69px;
+    padding-top: 8px;
+}
+
+.price__item-title-2::before {
+    position: absolute;
+    content: "";
+    top: 47px;
+    left: 134px;
+    width: 20px;
+    height: 2px;
+    background-color: #8eb574;
+}
+
+.price__item-title-2::after {
+    position: absolute;
+    content: "15 000 рублей";
+    top: 36px;
+    left: 163px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #8eb574;
+}
+
+.price__item-title-3 {
+    position: relative;
+    margin-bottom: 35px;
+    padding-right: 70px;
+}
+
+.price__item-title-3::before {
+    position: absolute;
+    content: "";
+    top: 36px;
+    left: 134px;
+    width: 20px;
+    height: 2px;
+    background-color: #8eb574;
+}
+
+.price__item-title-3::after {
+    position: absolute;
+    content: "4 000 рублей";
+    top: 25px;
+    left: 163px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #8eb574;
+}
+
+.price__descr {
+    width: 347px;
+}
+
+.price__descr-1 {
+    padding-left: 41px;
+}
+
+.price__item-1 {
+    padding-top: 170px;
+    margin-right: 20px;
+}
+
+.price__item-3 {
+    padding-top: 198px;
+}
+
+/*Footer*/
+.footer {
+    background: url(/img/footer-bg.png) no-repeat 122px 0 #fff;
+}
+
+.footer__container {
+    padding-top: 251px;
+}
+
+.footer__title {
+    font-size: 37px;
+    font-weight: 500;
+    text-transform: none;
+}
+
+.footer__item:not(:last-child) {
+    margin-right: 70px;
+}
+
+.footer__contacts {
+    padding-top: 100px;
+    padding-left: 85px;
+    padding-bottom: 40px;
+    background: url(/img/contacts-bg.png) no-repeat center 56px;
+    color: #4e4d4e;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+}
+
+.footer__skype {
+    position: relative;
+    padding-left: 34px;
+    letter-spacing: 1.4px;
+}
+
+.footer__skype::before {
+    position: absolute;
+    content: "///";
+    left: 5px;
+    color: #8eb574;
+}
+
+.footer__email {
+    position: relative;
+    padding-left: 43px;
+    letter-spacing: 1.4px;
+}
+
+.footer__email::before {
+    position: absolute;
+    content: "///";
+    left: 14px;
+    color: #8eb574;
+}
+
+.footer__phone {
+    position: relative;
+    padding-left: 36px;
+    letter-spacing: 1.4px;
+}
+
+.footer__phone::before {
+    position: absolute;
+    content: "///";
+    left: 6px;
+    color: #8eb574;
+}
