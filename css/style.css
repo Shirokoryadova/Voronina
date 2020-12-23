@@ -329,7 +329,7 @@ ul {
 
 .about__container {
     padding-top: 154px;
-    padding-bottom: 161px;
+    padding-bottom: 120px;
 }
 
 .about__title {
@@ -349,7 +349,7 @@ ul {
 
 .about__info {
     padding: 0 129px 20px 749px;
-    font-size: 13px;
+    font-size: 17px;
 }
 
 .about__descr {
@@ -385,11 +385,11 @@ ul {
 
 /*Price*/
 .price {
-    background: url(/img/price-leaves.png) no-repeat 124px 56px #fff;
+    background: url(/img/price-leaves.png) no-repeat 124px 3px #fff;
 }
 
 .price__container {
-    padding-top: 231px;
+    padding-top: 178px;
 }
 
 .price__title {
@@ -400,7 +400,7 @@ ul {
 .price__title::before {
     position: absolute;
     content: "";
-    top: -139px;
+    top: -136px;
     left: 589px;
     width: 2px;
     height: 38px;
@@ -530,6 +530,7 @@ ul {
 
 .footer__container {
     padding-top: 251px;
+    padding-bottom: 186px;
 }
 
 .footer__title {
@@ -546,6 +547,7 @@ ul {
     padding-top: 100px;
     padding-left: 85px;
     padding-bottom: 40px;
+    margin-bottom: 27px;
     background: url(/img/contacts-bg.png) no-repeat center 56px;
     color: #4e4d4e;
     font-size: 19px;
@@ -591,3 +593,41 @@ ul {
     left: 6px;
     color: #8eb574;
 }
+
+.footer__socials-list {
+	display: flex;
+	justify-content: center;
+}
+
+.footer__socials-link:nth-child(odd) {
+    margin-right: 20px;
+}
+
+.footer__socials--fb,
+.footer__socials--inst, 
+.footer__socials--vk,
+.footer__socials--pin {
+	display: inline-block; 
+    background: url('../img/sprite.png') no-repeat; 
+    width: 34px;
+    height: 34px;
+	cursor: pointer; 
+	transition: background-color, border-radius ease-in-out 0.4s;
+} 
+
+.footer__socials--fb {
+    background-position: -20px -20px;
+}
+
+.footer__socials--inst {
+    background-position: -94px -20px;
+}
+
+.footer__socials--vk {
+    background-position: -168px -20px
+}
+
+.footer__socials--pin {
+    background-position: -242px -20px;
+}
+
