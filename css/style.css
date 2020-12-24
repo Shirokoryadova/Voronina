@@ -144,11 +144,18 @@ ul {
 .nav-item {
     margin-right: 88px;
     z-index: 2;
+    transition: color ease-in-out 0.4s;
+}
+
+.nav-item:hover,
+.header__phone:hover {
+    color: #8eb574;
 }
 
 .header__phone {
     padding-top: 34px;
     font-size: 16px;
+    transition: color ease-in-out 0.4s;;
 }
 
 /*Hero*/
@@ -187,8 +194,14 @@ ul {
     height: 2px;
     width: 150px;
     background-color: #000;
+    opacity: 0;
     z-index: 1;
+    transition: opacity ease-in-out 0.4s;
 }
+
+.hero__btn:hover::before {
+    opacity: 1;
+} 
 
 .hero__btn::after {
     position: absolute;
@@ -308,7 +321,13 @@ ul {
     height: 2px;
     width: 174px;
     background-color: #000;
+    opacity: 0;
     z-index: 1;
+    transition: opacity ease-in-out 0.4s;
+}
+
+.portfolio-detailed__btn:hover:before {
+    opacity: 1;
 }
 
 .portfolio-detailed__btn::after {
@@ -369,7 +388,13 @@ ul {
     height: 2px;
     width: 219px;
     background-color: #000;
+    opacity: 0;
     z-index: 1;
+    transition: opacity ease-in-out 0.4s;
+}
+
+.about__btn:hover::before {
+    opacity: 1;
 }
 
 .about__btn::after {
@@ -543,6 +568,15 @@ ul {
     margin-right: 70px;
 }
 
+.footer__item {
+    transition: color ease-in-out 0.4s, font-size ease-in-out 0.4s;
+}
+
+.footer__item:hover {
+    color: #8eb574;
+    font-size: 23px;
+}
+
 .footer__contacts {
     padding-top: 100px;
     padding-left: 85px;
@@ -599,7 +633,7 @@ ul {
 	justify-content: center;
 }
 
-.footer__socials-link:nth-child(odd) {
+.footer__socials-link {
     margin-right: 20px;
 }
 
@@ -612,22 +646,38 @@ ul {
     width: 34px;
     height: 34px;
 	cursor: pointer; 
-	transition: background-color, border-radius ease-in-out 0.4s;
+	transition: background ease-in-out 0.4s;
 } 
 
 .footer__socials--fb {
     background-position: -20px -20px;
 }
 
+.footer__socials--fb:hover {
+    background: url(/img/sprite-active.png) no-repeat -20px -20px;
+}
+
 .footer__socials--inst {
     background-position: -94px -20px;
 }
 
+.footer__socials--inst:hover {
+    background: url(/img/sprite-active.png) no-repeat -94px -20px;;
+}
+
 .footer__socials--vk {
-    background-position: -168px -20px
+    background-position: -168px -20px;
+}
+
+.footer__socials--vk:hover {
+    background: url(/img/sprite-active.png) no-repeat -168px -20px;
 }
 
 .footer__socials--pin {
     background-position: -242px -20px;
+}
+
+.footer__socials--pin:hover  {
+    background: url(/img/sprite-active.png) no-repeat -242px -20px;
 }
 
