@@ -10,168 +10,199 @@
 </head>
 
 <body>
-    <div class="bg">
-        <header class="header">
-            <div class="header__container container">
-                <img src="img/logo.png" alt="Логотип" class="header__logo logo">
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link">Обо мне</a>
+    <header class="header">
+        <div class="header__container container">
+            <img src="img/logo.png" alt="Логотип" class="header__logo logo">
+            <div class="header__dropdown">
+                <div class="header__burger" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <nav class="header__dropdown-list">
+                    <ul>
+                        <li class="header__dropdown-item">
+                            <a href="#services" class="header__dropdown-link nav-link">Обо мне</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#price" class="nav-link">Стоимость</a>
+                        <li class="header__dropdown-item">
+                            <a href="#works" class="header__dropdown-link nav-link">Стоимость</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#contacts" class="nav-link">Контакты</a>
+                        <li class="header__dropdown-item">
+                            <a href="#price" class="header__dropdown-link nav-link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
-                <a href="tel:+79166677112" class="header__phone phone">+ 7 916 66 77 112</a>
             </div>
-        </header>
-        <main class="main">
-            <section class="hero">
-                <div class="hero__container container">
-                    <div class="hero__info">
-                        <h1 class="hero__title">Дарья Воронина</h1>
-                        <p class="hero__descr">Food — фотограф и food — стилист в Москве и Московской области</p>
-                        <button class="hero__btn btn">Портфолио</button>
-                    </div>
-                    <img src="img/woman.png" alt="Дарья" class="hero__img">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Обо мне</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#price" class="nav-link">Стоимость</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacts" class="nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="tel:+79166677112" class="header__phone phone">+ 7 916 66 77 112</a>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="hero__container container">
+                <div class="hero__info">
+                    <h1 class="hero__title">Дарья Воронина</h1>
+                    <p class="hero__descr">Food — фотограф и food — стилист в&nbsp;Москве и Московской области</p>
+                    <button class="hero__btn btn">Портфолио</button>
                 </div>
-            </section>
-            <section class="portfolio">
-                <div class="portfolio__container container">
-                    <h2 class="portfolio__title title">Портфолио</h2>
-                    <ul class="portfolio__list">
-                        <li class="portfolio__item portfolio__item-1">
-                            <img src="img/portfolio-1.png" alt="Портфолио" class="portfolio__img">
+                <picture>
+                    <source media="(max-width:1000px)" srcset="img/woman-tablet.jpg">
+                    <img src="img/woman.jpg" alt="Дарья" class="hero__img" aria-hidden="true">
+                </picture>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="portfolio__container container">
+                <h2 class="portfolio__title title">Портфолио</h2>
+                <ul class="portfolio__list">
+                    <li class="portfolio__item portfolio__item-1">
+                        <img src="img/portfolio-1.png" alt="Портфолио" class="portfolio__img">
+                        <p class="portfolio__item-title">#соцсети</p>
+                        <p class="portfolio__item-descr">Фото контент для социальных сетей кондитерской «Леди
+                            Мармелад»
+                        </p>
+                    </li>
+                    <li class="portfolio__item portfolio__item-group">
+                        <div class="portfolio__item-2">
+                            <img src="img/portfolio-2.png" alt="Портфолио" class="portfolio__img">
                             <p class="portfolio__item-title">#соцсети</p>
-                            <p class="portfolio__item-descr">Фото контент для социальных сетей кондитерской «Леди
-                                Мармелад»
+                            <p class="portfolio__item-descr">Фото контент для инстаграма ресторана «Funky Food»
                             </p>
-                        </li>
-                        <li class="portfolio__item portfolio__item-group">
-                            <div class="portfolio__item-2">
-                                <img src="img/portfolio-2.png" alt="Портфолио" class="portfolio__img">
-                                <p class="portfolio__item-title">#соцсети</p>
-                                <p class="portfolio__item-descr">Фото контент для инстаграма ресторана «Funky Food»
-                                </p>
-                            </div>
-                            <div class="portfolio__item-3">
-                                <img src="img/portfolio-3.png" alt="Портфолио" class="portfolio__img">
-                                <p class="portfolio__item-title">#менюресторана</p>
-                                <p class="portfolio__item-descr">Съемка меню ресторана «Хорошая&nbsp;еда»</p>
-                            </div>
-                        </li>
-                        <li class="portfolio__item portfolio__item-4">
-                            <img src="img/portfolio-4.png" alt="Портфолио" class="portfolio__img">
-                            <p class="portfolio__item-title">#рекламнаясъемка</p>
-                            <p class="portfolio__item-descr">Съемка для баннерной рекламной печати&nbsp;ресторана
-                                «Бранч»</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="portfolio-detailed">
-                <div class="portfolio-detailed__container container">
-                    <h3 class="portfolio-detailed__title">Подробное портфолио</h3>
-                    <p class="portfolio-detailed__descr">С описанием задач заказчика, полного процесса работы и
-                        финальным результатом</p>
-                    <button class="portfolio-detailed__btn btn">Скачать в pdf</button>
-                </div>
-            </section>
-            <section class="about">
-                <div class="about__container container">
-                    <h2 class="about__title title">Обо мне</h2>
-                    <div class="about__info">
+                        </div>
+                        <div class="portfolio__item-3">
+                            <img src="img/portfolio-3.png" alt="Портфолио" class="portfolio__img">
+                            <p class="portfolio__item-title">#менюресторана</p>
+                            <p class="portfolio__item-descr">Съемка&nbsp;меню&nbsp;ресторана «Хорошая&nbsp;еда»</p>
+                        </div>
+                    </li>
+                    <li class="portfolio__item portfolio__item-4">
+                        <img src="img/portfolio-4.png" alt="Портфолио" class="portfolio__img">
+                        <p class="portfolio__item-title">#рекламнаясъемка</p>
+                        <p class="portfolio__item-descr">Съемка&nbsp;для&nbsp;баннерной рекламной печати
+                            ресторана&nbsp;«Бранч»</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="portfolio-detailed">
+            <div class="portfolio-detailed__container container">
+                <h3 class="portfolio-detailed__title">Подробное портфолио</h3>
+                <p class="portfolio-detailed__descr">С описанием задач заказчика, полного процесса работы
+                    и&nbsp;финальным результатом</p>
+                <button class="portfolio-detailed__btn btn">Скачать в pdf</button>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about__container container">
+                <h2 class="about__title title">Обо мне</h2>
+                <div class="about__info">
+                    <div class="about__descr-left">
                         <p class="about__descr">Во всех фотосъемках еды, я работаю как фуд-фотограф и фуд-стилист.
                             Создаю креативные концепции, реализую ваши идеи. Разрабатываю рецепты, вкусно снимаю.
                             Провожу обучение</p>
-                        <p class="about__descr">Всегда открыта к сотрудничеству
+                        <p class="about__descr about__descr-hide">Всегда открыта к сотрудничеству
                             и рада новым предложениям</p>
+                    </div>
+                    <div class="about__descr-right">
                         <p class="about__descr">Tel.: + 7 916 66 77 112 Mail:&nbsp;daria.voronina@gmail.com</p>
                         <button class="about__btn btn">Работать со мной</button>
                     </div>
                 </div>
-            </section>
-            <section class="price">
-                <div class="price__container container">
-                    <h2 class="price__title title">Стоимость</h2>
-                    <div class="price__info">
-                        <div class="price__item price__item-1">
-                            <img src="/img/price-1.png" alt="Drinks" class="price__img price__img-1">
-                            <h3 class="price__item-title price__item-title-1">12 часов съемки</h3>
-                            <p class="price__descr price__descr-1">Подготовка к съемке от 1 недели
-                                Предварительный дизайн&nbsp;—&nbsp;проект
-                                Food&nbsp;-&nbsp;стилизация
-                                Расширенный&nbsp;реквизит
-                                Цветокоррекция и пост-обработка
-                                Результаты&nbsp;в&nbsp;течение 3-х дней
-                            </p>
-                        </div>
-                        <div class="price__item price__item-2">
-                            <img src="/img/price-2.png" alt="Fruits" class="price__img price__img-2">
-                            <h3 class="price__item-title price__item-title-2">4 часа съемки</h3>
-                            <p class="price__descr price__descr-2">Подготовка к съемке - 1 день
-                                Food&nbsp;—&nbsp;стилизация
-                                Использование&nbsp;—&nbsp;реквизита
-                                Цветокоррекция и постобработка
-                                Результаты в течение 3-х дней
-                            </p>
-                        </div>
-                        <div class="price__item price__item-3">
-                            <img src="/img/price-3.png" alt="Dish" class="price__img price__img-3">
-                            <h3 class="price__item-title price__item-title-3">1 час съемки</h3>
-                            <p class="price__descr price__descr-3">Food - стилизация
-                                Использование&nbsp;реквизита
-                                Цветокоррекция
-                                Результаты&nbsp;в&nbsp;течение&nbsp;5-х дней
-                            </p>
-                        </div>
+            </div>
+        </section>
+        <section class="price" id="price">
+            <div class="price__container container">
+                <h2 class="price__title title">Стоимость</h2>
+                <div class="price__info">
+                    <div class="price__item price__item-1">
+                        <img src="/img/price-1.png" alt="Drinks" class="price__img price__img-1">
+                        <h3 class="price__item-title price__item-title-1">12 часов съемки</h3>
+                        <p class="price__descr price__descr-1">Подготовка к съемке от 1 недели
+                            Предварительный дизайн&nbsp;—&nbsp;проект
+                            Food&nbsp;-&nbsp;стилизация
+                            Расширенный&nbsp;реквизит
+                            Цветокоррекция и пост-обработка
+                            Результаты&nbsp;в&nbsp;течение 3-х дней
+                        </p>
+                    </div>
+                    <div class="price__item price__item-2">
+                        <img src="/img/price-2.png" alt="Fruits" class="price__img price__img-2">
+                        <h3 class="price__item-title price__item-title-2">4 часа съемки</h3>
+                        <p class="price__descr price__descr-2">Подготовка к съемке -&nbsp;1&nbsp;день
+                            Food&nbsp;—&nbsp;стилизация
+                            Использование&nbsp;—&nbsp;реквизита
+                            Цветокоррекция и постобработка
+                            Результаты в течение 3-х дней
+                        </p>
+                    </div>
+                    <div class="price__item price__item-3">
+                        <img src="/img/price-3.png" alt="Dish" class="price__img price__img-3">
+                        <h3 class="price__item-title price__item-title-3">1 час съемки</h3>
+                        <p class="price__descr price__descr-3">Food - стилизация
+                            Использование&nbsp;реквизита
+                            Цветокоррекция
+                            Результаты&nbsp;в&nbsp;течение&nbsp;5-и дней
+                        </p>
                     </div>
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="footer__container container">
-                <h2 class="footer__title title">Свяжитесь со мной</h2>
-                <div class="footer__contacts">
-                    <span class="footer__item">Skype
-                        <a href="https://www.skype.com/ru/" class="footer__skype">daria.voronina</a>
-                    </span>
-                    <span class="footer__item">E-mail
-                        <a type="email" href="https://www.gmail.com/" class="footer__email">daria.voronina@gmail.com</a>
-                    </span>
-                    <span class="footer__item">Phone
-                        <a type="tel" href="+79166677112" class="footer__phone">+ 7 916 66 77 112</a>
-                    </span>
-                </div>
-                <div class="footer__socials">
-                    <ul class="footer__socials-list">
-                        <li class="footer__socials-link">
-                            <a href="https://www.facebook.com/" class="footer__socials--fb" target="_blank" rel="noopener"
-                                aria-label="Я в фэйсбуке"></a>
-                        </li>
-                        <li class="footer__socials-link">
-                            <a href="https://www.instagram.com/" class="footer__socials--inst" target="_blank"
-                                rel="noopener" aria-label="Я в инстаграм"></a>
-                        </li>
-                        <li class="footer__socials-link">
-                            <a href="https://www.vk.com/" class="footer__socials--vk" target="_blank"
-                                rel="noopener" aria-label="Я вконтакте"></a>
-                        </li>
-                        <li class="footer__socials-link">
-                            <a href="https://www.pinterest.com/" class="footer__socials--pin" target="_blank"
-                                rel="noopener" aria-label="Я в пинтерест"></a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-        </footer>
-    </div>
-
+        </section>
+    </main>
+    <footer class="footer" id="contacts">
+        <div class="footer__container container">
+            <h2 class="footer__title title">Свяжитесь со мной</h2>
+            <div class="footer__contacts">
+                <ul class="footer__contacts-list">
+                    <li class="footer__item">
+                        <span class="footer__item-skype">Skype</span>
+                        <a href="https://www.skype.com/ru/" class="footer__skype">daria.voronina</a>
+                    </li>
+                    <li class="footer__item">
+                        <span class="footer__item-email">E-mail</span>
+                        <a type="email" href="https://www.gmail.com/" class="footer__email">daria.voronina@gmail.com</a>
+                    </li>
+                    <li class="footer__item">
+                        <span class="footer__item-phone">Phone</span>
+                        <a type="tel" href="+79166677112" class="footer__phone">+ 7 916 66 77 112</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__socials">
+                <ul class="footer__socials-list">
+                    <li class="footer__socials-link">
+                        <a href="https://www.facebook.com/" class="footer__socials--fb" target="_blank" rel="noopener"
+                            aria-label="Я в фэйсбуке"></a>
+                    </li>
+                    <li class="footer__socials-link">
+                        <a href="https://www.instagram.com/" class="footer__socials--inst" target="_blank"
+                            rel="noopener" aria-label="Я в инстаграм"></a>
+                    </li>
+                    <li class="footer__socials-link">
+                        <a href="https://www.vk.com/" class="footer__socials--vk" target="_blank" rel="noopener"
+                            aria-label="Я вконтакте"></a>
+                    </li>
+                    <li class="footer__socials-link">
+                        <a href="https://www.pinterest.com/" class="footer__socials--pin" target="_blank" rel="noopener"
+                            aria-label="Я в пинтерест"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
