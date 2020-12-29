@@ -266,7 +266,7 @@
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
     .title {
         font-size: 24px;
     }
@@ -352,7 +352,7 @@
     }
 
     .footer__item-skype {
-       margin-right: 40px;
+        margin-right: 40px;
     }
 
     .footer__skype::before {
@@ -386,4 +386,499 @@
         top: -2px;
         color: #8eb574;
     }
+}
+
+@media (max-width: 700px) {
+    .btn {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .header__logo {
+        width: 112px;
+    }
+
+    .header__phone {
+        display: none;
+    }
+
+    .header__dropdown {
+        left: unset;
+        right: 15px;
+        top: 5px;
+        transform: scale(-1, 1);
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        background-color: #fff;
+    }
+
+    .hero {
+        background: url(/img/woman-phone.jpg) no-repeat #828589;
+    }
+
+    .hero__container {
+        padding: 0 15px 159px;
+    }
+
+    .hero__img {
+        display: none;
+    }
+
+    .hero__info {
+        padding-top: 186px;
+        padding-left: 0;
+        color: #fffeff;
+    }
+
+    .hero__title {
+        margin-bottom: 9px;
+        font-size: 30px;
+    }
+
+    .hero__descr {
+        margin-bottom: 27px;
+        font-size: 14px;
+    }
+
+    .hero__btn {
+        color: #fffeff;
+    }
+
+    .hero__btn::before {
+        position: absolute;
+        content: "";
+        left: 0px;
+        top: 23px;
+        height: 2px;
+        width: 150px;
+        background-color: #fffeff;
+        opacity: 0;
+        z-index: 1;
+        transition: opacity ease-in-out 0.4s;
+    }
+
+    .hero__btn::after {
+        position: absolute;
+        content: "";
+        top: 9px;
+        left: 103px;
+        height: 2px;
+        width: 26px;
+        background-color: #fffeff;
+        z-index: 1;
+    }
+
+    .portfolio__container {
+        padding: 137px 15px 6px 15px;
+    }
+
+    .portfolio__title {
+        margin-bottom: 44px;
+    }
+
+    .portfolio__title::before {
+        position: absolute;
+        content: "";
+        top: -57px;
+        left: 50%;
+        width: 2px;
+        height: 31px;
+        background-color: #cb98a8;
+    }
+
+    .portfolio__list {
+        display: block;
+    }
+
+    .portfolio__item-1,
+    .portfolio__item-4 {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .portfolio__img {
+        margin-bottom: 11px;
+        width: 100%;
+    }
+
+    .portfolio__item-group {
+        width: 100%;
+    }
+
+    .portfolio__item-descr {
+        font-size: 18px;
+    }
+
+    .portfolio__item-1,
+    .portfolio__item-2,
+    .portfolio__item-group {
+        margin-bottom: 65px;
+    }
+
+    .portfolio-detailed {
+        background: url(/img/portfolio-detailed-phone.png) no-repeat 0 43px #fff;
+    }
+
+    .portfolio-detailed__container {
+        padding: 0 15px 170px;
+        color: #fff;
+    }
+
+    .portfolio-detailed__title {
+        margin-bottom: 18px;
+        padding-top: 162px;
+        padding-left: 31px;
+        font-size: 18px;
+    }
+
+    .portfolio-detailed__descr {
+        padding-left: 30px;
+        font-size: 14px;
+        letter-spacing: unset;
+        line-height: 17px;
+    }
+
+    .portfolio-detailed__descr::after {
+        position: absolute;
+        content: url(/img/pdf-phone.png);
+        top: 79px;
+        left: 188px;
+    }
+
+    .portfolio-detailed__btn {
+        padding-left: 26px;
+        color: #fff;
+    }
+
+    .portfolio-detailed__btn::after {
+        position: absolute;
+        content: "";
+        top: 7px;
+        left: 152px;
+        height: 2px;
+        width: 26px;
+        background-color: #fff;
+        z-index: 1;
+    }
+
+    .about {
+        background: url(/img/about-bg-phone.png) no-repeat 0 164px #fff;
+    }
+
+    .about__container {
+        padding: 98px 15px 31px;
+    }
+
+    .about__title::before {
+        position: absolute;
+        content: "";
+        top: -61px;
+        left: 50%;
+        width: 2px;
+        height: 31px;
+        background-color: #cb98a8;
+    }
+
+    .about__info {
+        padding: 0;
+        padding-top: 193px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about__descr {
+        margin-bottom: 10px;
+        width: 293px;
+        font-size: 14px;
+    }
+
+    .about__descr-right {
+        padding-top: 0;
+    }
+
+    .about__btn {
+        margin-top: 8px;
+        padding-right: 34px;
+    }
+
+    .about__btn::after {
+        position: absolute;
+        content: "";
+        top: 7px;
+        left: 163px;
+        height: 2px;
+        width: 26px;
+        background-color: #000;
+        z-index: 1;
+    }
+
+    .price__container {
+        padding: 110px 15px 50px;
+    }
+
+    .price__title {
+        margin-bottom: 20px;
+    }
+
+    .price__title::before {
+        position: absolute;
+        content: "";
+        top: -58px;
+        left: 50%;
+        width: 2px;
+        height: 31px;
+        background-color: #cb98a8;
+    }
+
+    .price__info {
+        flex-direction: column;
+    }
+
+    .price__item-1,
+    .price__item-2,
+    .price__item-3 {
+        width: 100%;
+    }
+
+    .price__item-1 {
+        margin: 0;
+        margin-bottom: 77px;
+        padding-top: 28px;
+    }
+
+    .price__img {
+        margin-bottom: 9px;
+    }
+
+    .price__item-title {
+        margin-bottom: 26px;
+        padding-left: 39px;
+        font-size: 18px;
+    }
+
+    .price__item-title-1::before {
+        position: absolute;
+        content: "";
+        top: 30px;
+        left: 111px;
+        width: 11px;
+        height: 2px;
+        background-color: #8eb574;
+    }
+
+    .price__item-title-1::after {
+        position: absolute;
+        content: "30 000 рублей";
+        top: 20px;
+        left: 135px;
+        font-weight: 600;
+        font-size: 18px;
+        color: #8eb574;
+    }
+
+    .price__descr-1 {
+        margin: 0 auto;
+        padding: 0;
+        width: 275px;
+    }
+
+    .price__item-2 {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .price__item-title-2 {
+        padding-left: 51px;
+    }
+
+    .price__item-title-2::before {
+        position: absolute;
+        content: "";
+        top: 31px;
+        left: 101px;
+        width: 12px;
+        height: 2px;
+        background-color: #8eb574;
+    }
+
+    .price__item-title-2::after {
+        position: absolute;
+        content: "15 000 рублей";
+        top: 20px;
+        left: 122px;
+        font-weight: 600;
+        font-size: 18px;
+        color: #8eb574;
+    }
+
+    .price__descr-2 {
+        padding-left: 0;
+        margin: 0 auto;
+        width: 250px;
+    }
+
+    .price__item-3 {
+        padding-top: 50px;
+    }
+
+    .price__item-title-3 {
+        padding-left: 54px;
+    }
+
+    .price__item-title-3::before {
+        position: absolute;
+        content: "";
+        top: 33px;
+        left: 104px;
+        width: 12px;
+        height: 2px;
+        background-color: #8eb574;
+    }
+
+    .price__item-title-3::after {
+        position: absolute;
+        content: "4 000 рублей";
+        top: 22px;
+        left: 126px;
+        font-weight: 600;
+        font-size: 18px;
+        color: #8eb574;
+    }
+
+    .price__descr-3 {
+        width: 207px;
+        margin: 0 auto;
+    }
+
+    .footer {
+        background: none;
+    }
+
+    .footer__container {
+        padding: 95px 15px 78px;
+    }
+
+    .footer__title::before {
+        position: absolute;
+        content: "";
+        top: -55px;
+        left: 50%;
+        width: 2px;
+        height: 31px;
+        background-color: #cb98a8;
+    }
+
+    .footer__contacts {
+        padding: 36px 0 15px;
+        margin-bottom: 20px;
+    }
+
+    .footer__contacts-list {
+        font-size: 14px;
+    }
+
+    .footer__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .footer__item-skype {
+        margin-right: 2px;
+    }
+
+    .footer__skype::before {
+        position: absolute;
+        content: "///";
+        left: 4px;
+        top: -5px;
+        color: #8eb574;
+        font-size: 19px;
+    }
+
+    .footer__email,
+    .footer__phone {
+        letter-spacing: unset;
+    }
+
+    .footer__email::before {
+        top: -5px;
+        position: absolute;
+        content: "///";
+        left: 6px;
+        color: #8eb574;
+        font-size: 18px;
+    }
+
+    .footer__item-phone {
+        padding-left: 6px;
+        margin-right: 38px;
+    }
+
+    .footer__phone {
+        padding: 0;
+    }
+
+    .footer__phone::before {
+        position: absolute;
+        content: "///";
+        left: -27px;
+        top: -6px;
+        color: #8eb574;
+        font-size: 18px;
+    }
+
+    .footer__socials--fb,
+    .footer__socials--inst,
+    .footer__socials--vk,
+    .footer__socials--pin {
+        display: inline-block;
+        background: url(../img/sprite-phone.png) no-repeat;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        transition: background ease-in-out 0.4s;
+    }
+
+    .footer__socials--fb {
+        background-position: -27px -27px;
+    }
+
+    .footer__socials--inst {
+        background-position: -107px -27px;
+    }
+
+    .footer__socials--vk {
+        background-position: -187px -27px;
+    }
+
+    .footer__socials--pin {
+        background-position: -267px -27px;
+    }
+
+    .footer__socials--fb:hover {
+        background: url(/img/sprite-active-phone.png) no-repeat -27px -27px;
+    }
+
+    .footer__socials--inst:hover {
+        background: url(/img/sprite-active-phone.png) no-repeat -107px -27px;;
+    }
+
+    .footer__socials--vk:hover {
+        background: url(/img/sprite-active-phone.png) no-repeat -187px -27px;
+    }
+
+    .footer__socials--pin:hover  {
+        background: url(/img/sprite-active-phone.png) no-repeat -267px -27px;
+    }
+
+    .footer__socials-link:not(:last-child) {
+        margin-right: 26px;
+    }
+    
 }
