@@ -151,7 +151,7 @@ ul {
     left: 0;
     width: 100%;
     height: 110vw;
-    background: url(/img/dropdown-menu-bg.png) 106px 1px no-repeat #f8f8f8;
+    background: url(img/dropdown-menu-bg.png) 106px 1px no-repeat #f8f8f8;
     z-index: 5;
 }
 
@@ -254,7 +254,7 @@ ul {
 
 /*Hero*/
 .hero {
-    background: url(/img/bg.png) no-repeat top right #f8f8f8;
+    background: url(img/bg.png) no-repeat top right #f8f8f8;
 }
 
 .hero__container {
