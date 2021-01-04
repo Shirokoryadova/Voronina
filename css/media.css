@@ -382,13 +382,18 @@
     .footer__phone::before {
         position: absolute;
         content: "///";
-        left: 29px;
-        top: -2px;
+        left: -22px;
+        top: -4px;
+        font-size: 18px;
         color: #8eb574;
+    }
+
+    .footer__contacts {
+        background: none;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 710px) {
     .btn {
         font-size: 14px;
     }
@@ -419,15 +424,12 @@
     }
 
     .hero {
-        background: url(/img/woman-phone.jpg) no-repeat #828589;
+        background: url(/img/woman-phone.jpg) no-repeat center #dbe0e6;
+        background-color: #dbe0e6;
     }
 
     .hero__container {
         padding: 0 15px 159px;
-    }
-
-    .hero__img {
-        display: none;
     }
 
     .hero__info {
@@ -444,6 +446,10 @@
     .hero__descr {
         margin-bottom: 27px;
         font-size: 14px;
+    }
+
+    .hero__img {
+        display: none;
     }
 
     .hero__btn {
@@ -523,7 +529,7 @@
     }
 
     .portfolio-detailed {
-        background: url(/img/portfolio-detailed-phone.png) no-repeat 0 43px #fff;
+        background: url(/img/portfolio-detailed-phone.png) no-repeat 0 44px #fff;
     }
 
     .portfolio-detailed__container {
@@ -543,6 +549,10 @@
         font-size: 14px;
         letter-spacing: unset;
         line-height: 17px;
+    }
+
+    .portfolio-detailed__descr::before {
+        display: none;
     }
 
     .portfolio-detailed__descr::after {
@@ -569,7 +579,7 @@
     }
 
     .about {
-        background: url(/img/about-bg-phone.png) no-repeat 0 164px #fff;
+        background: url(/img/about-bg-phone.png) no-repeat center 164px #fff;
     }
 
     .about__container {
@@ -599,8 +609,13 @@
         font-size: 14px;
     }
 
+    .about__descr-left {
+        margin: 0 auto;
+    }
+
     .about__descr-right {
         padding-top: 0;
+        margin: 0 auto;
     }
 
     .about__btn {
@@ -645,6 +660,7 @@
     .price__item-2,
     .price__item-3 {
         width: 100%;
+        text-align: center;
     }
 
     .price__item-1 {
@@ -659,7 +675,8 @@
 
     .price__item-title {
         margin-bottom: 26px;
-        padding-left: 39px;
+        padding-left: 0;
+        padding-right: 67px;
         font-size: 18px;
     }
 
@@ -667,7 +684,7 @@
         position: absolute;
         content: "";
         top: 30px;
-        left: 111px;
+        left: 39%;
         width: 11px;
         height: 2px;
         background-color: #8eb574;
@@ -677,7 +694,7 @@
         position: absolute;
         content: "30 000 рублей";
         top: 20px;
-        left: 135px;
+        left: 46%;
         font-weight: 600;
         font-size: 18px;
         color: #8eb574;
@@ -694,15 +711,11 @@
         margin-bottom: 20px;
     }
 
-    .price__item-title-2 {
-        padding-left: 51px;
-    }
-
     .price__item-title-2::before {
         position: absolute;
         content: "";
         top: 31px;
-        left: 101px;
+        left: 35%;
         width: 12px;
         height: 2px;
         background-color: #8eb574;
@@ -712,7 +725,7 @@
         position: absolute;
         content: "15 000 рублей";
         top: 20px;
-        left: 122px;
+        left: 42%;
         font-weight: 600;
         font-size: 18px;
         color: #8eb574;
@@ -728,15 +741,11 @@
         padding-top: 50px;
     }
 
-    .price__item-title-3 {
-        padding-left: 54px;
-    }
-
     .price__item-title-3::before {
         position: absolute;
         content: "";
         top: 33px;
-        left: 104px;
+        left: 36%;
         width: 12px;
         height: 2px;
         background-color: #8eb574;
@@ -746,7 +755,7 @@
         position: absolute;
         content: "4 000 рублей";
         top: 22px;
-        left: 126px;
+        left: 43%;
         font-weight: 600;
         font-size: 18px;
         color: #8eb574;
@@ -881,4 +890,11 @@
         margin-right: 26px;
     }
     
+}
+
+@media (max-width: 400px) {
+    .portfolio-detailed {
+        background: url(/img/portfolio-detailed-phone.png) no-repeat center 44px #fff;
+        background-size: unset;
+    }
 }
