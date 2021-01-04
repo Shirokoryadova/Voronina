@@ -254,7 +254,7 @@ ul {
 
 /*Hero*/
 .hero {
-    background: url(./img/bg.png) no-repeat top right #f8f8f8;
+    background: url(../img/bg.png) no-repeat top right #f8f8f8;
 }
 
 .hero__container {
