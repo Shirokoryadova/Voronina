@@ -8,7 +8,7 @@
     }
 
     .portfolio {
-        background: url(/img/2section-leaves-tablet.png) no-repeat 4px 182px #fff;
+        background: url(../img/2section-leaves-tablet.png) no-repeat 4px 182px #fff;
     }
 
     .portfolio__container {
@@ -36,7 +36,7 @@
     }
 
     .portfolio-detailed {
-        background: url('/img/portfolio-detailed-tablet.png') no-repeat 2px 14px #fff;
+        background: url(../img/portfolio-detailed-tablet.png) no-repeat 2px 14px #fff;
     }
 
     .portfolio-detailed__container {
@@ -57,7 +57,7 @@
 
     .portfolio-detailed__descr::after {
         position: absolute;
-        content: url(/img/pdf-tablet.png);
+        content: url(../img/pdf-tablet.png);
         top: 81px;
         left: 195px;
     }
@@ -67,7 +67,7 @@
     }
 
     .about {
-        background: url(/img/about-bg-tablet.png) no-repeat top center #fff;
+        background: url(../img/about-bg-tablet.png) no-repeat top center #fff;
     }
 
     .about__title::before {
@@ -91,7 +91,7 @@
 
     .about__info::after {
         position: absolute;
-        content: url(/img/about-leaf-tablet.png);
+        content: url(../img/about-leaf-tablet.png);
         bottom: -107px;
         right: 217px;
     }
@@ -903,19 +903,19 @@
     }
 
     .footer__socials--fb:hover {
-        background: url(/img/sprite-active-phone.png) no-repeat -27px -27px;
+        background: url(../img/sprite-active-phone.png) no-repeat -27px -27px;
     }
 
     .footer__socials--inst:hover {
-        background: url(/img/sprite-active-phone.png) no-repeat -107px -27px;;
+        background: url(../img/sprite-active-phone.png) no-repeat -107px -27px;;
     }
 
     .footer__socials--vk:hover {
-        background: url(/img/sprite-active-phone.png) no-repeat -187px -27px;
+        background: url(../img/sprite-active-phone.png) no-repeat -187px -27px;
     }
 
     .footer__socials--pin:hover  {
-        background: url(/img/sprite-active-phone.png) no-repeat -267px -27px;
+        background: url(../img/sprite-active-phone.png) no-repeat -267px -27px;
     }
 
     .footer__socials-link:not(:last-child) {
@@ -926,7 +926,7 @@
 
 @media (max-width: 400px) {
     .portfolio-detailed {
-        background: url(/img/portfolio-detailed-phone.png) no-repeat center 44px #fff;
+        background: url(../img/portfolio-detailed-phone.png) no-repeat center 44px #fff;
         background-size: unset;
     }
 }
