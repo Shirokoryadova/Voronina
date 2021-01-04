@@ -314,7 +314,7 @@ ul {
 
 /*Portfolio*/
 .portfolio {
-    background: url(/img/2section-leaves.png) no-repeat 96px 200px #fff;
+    background: url(img/2section-leaves.png) no-repeat 96px 200px #fff;
     background-size: contain;
 }
 
@@ -378,12 +378,12 @@ ul {
 
 .portfolio__details {
     padding: 0;
-    background: url(/img/portfolio-detailed.png) no-repeat #fff;
+    background: url(img/portfolio-detailed.png) no-repeat #fff;
 }
 
 /*Portfolio-detailed*/
 .portfolio-detailed {
-    background: url('/img/portfolio-detailed.png') no-repeat 2px -11px #fff;
+    background: url(img/portfolio-detailed.png) no-repeat 2px -11px #fff;
 }
 
 .portfolio-detailed__container {
@@ -405,14 +405,14 @@ ul {
 
 .portfolio-detailed__descr::before {
     position: absolute;
-    content: url(/img/detailed-portfolio-leaf.png);
+    content: url(img/detailed-portfolio-leaf.png);
     top: -86px;
     left: 570px;
 }
 
 .portfolio-detailed__descr::after {
     position: absolute;
-    content: url(/img/pdf.png);
+    content: url(img/pdf.png);
     top: 105px;
     left: 197px;
 }
@@ -447,7 +447,7 @@ ul {
 
 /*About*/
 .about {
-    background: url(/img/about-bg.png) no-repeat 0px 20px #fff;
+    background: url(img/about-bg.png) no-repeat 0px 20px #fff;
 }
 
 .about__container {
@@ -514,7 +514,7 @@ ul {
 
 /*Price*/
 .price {
-    background: url(/img/price-leaves.png) no-repeat 124px 54px #fff;
+    background: url(img/price-leaves.png) no-repeat 124px 54px #fff;
 }
 
 .price__container {
@@ -665,7 +665,7 @@ ul {
 
 /*Footer*/
 .footer {
-    background: url(/img/footer-bg.png) no-repeat 125px 163px #fff;
+    background: url(img/footer-bg.png) no-repeat 125px 163px #fff;
 }
 
 .footer__container {
@@ -705,7 +705,7 @@ ul {
     padding-top: 98px;
     padding-bottom: 40px;
     margin-bottom: 27px;
-    background: url(/img/contacts-bg.png) no-repeat center 56px;
+    background: url(img/contacts-bg.png) no-repeat center 56px;
     color: #4e4d4e;
     text-align: center;
     font-size: 18px;
@@ -771,7 +771,7 @@ ul {
 .footer__socials--vk,
 .footer__socials--pin {
 	display: inline-block; 
-    background: url('../img/sprite.png') no-repeat; 
+    background: url('img/sprite.png') no-repeat; 
     width: 34px;
     height: 34px;
 	cursor: pointer; 
@@ -783,7 +783,7 @@ ul {
 }
 
 .footer__socials--fb:hover {
-    background: url(/img/sprite-active.png) no-repeat -20px -20px;
+    background: url(img/sprite-active.png) no-repeat -20px -20px;
 }
 
 .footer__socials--inst {
@@ -791,7 +791,7 @@ ul {
 }
 
 .footer__socials--inst:hover {
-    background: url(/img/sprite-active.png) no-repeat -94px -20px;;
+    background: url(img/sprite-active.png) no-repeat -94px -20px;;
 }
 
 .footer__socials--vk {
@@ -799,7 +799,7 @@ ul {
 }
 
 .footer__socials--vk:hover {
-    background: url(/img/sprite-active.png) no-repeat -168px -20px;
+    background: url(img/sprite-active.png) no-repeat -168px -20px;
 }
 
 .footer__socials--pin {
@@ -807,6 +807,6 @@ ul {
 }
 
 .footer__socials--pin:hover  {
-    background: url(/img/sprite-active.png) no-repeat -242px -20px;
+    background: url(img/sprite-active.png) no-repeat -242px -20px;
 }
 
