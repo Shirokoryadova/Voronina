@@ -238,9 +238,12 @@ ul {
     transition: color ease-in-out 0.4s;
 }
 
-.nav-item:hover,
-.header__phone:hover {
+.nav-item:hover {
     color: #8eb574;
+}
+
+.header__phone:hover {
+    color: #212121;
 }
 
 .header__phone {
