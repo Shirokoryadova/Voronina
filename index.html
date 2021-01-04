@@ -19,18 +19,25 @@
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
-                <nav class="header__dropdown-list">
-                    <ul>
+                <nav class="header__dropdown-nav">
+                    <ul class="header__dropdown-list">
                         <li class="header__dropdown-item">
-                            <a href="#services" class="header__dropdown-link nav-link">Обо мне</a>
+                            <a href="#works" class="header__dropdown-link nav-link">Портфолио</a>
                         </li>
                         <li class="header__dropdown-item">
-                            <a href="#works" class="header__dropdown-link nav-link">Стоимость</a>
+                            <a href="#about" class="header__dropdown-link nav-link">Обо мне</a>
                         </li>
                         <li class="header__dropdown-item">
-                            <a href="#price" class="header__dropdown-link nav-link">Контакты</a>
+                            <a href="#price" class="header__dropdown-link nav-link">Стоимость</a>
+                        </li>
+                        <li class="header__dropdown-item">
+                            <a href="#contacts" class="header__dropdown-link nav-link">Контакты</a>
                         </li>
                     </ul>
+                    <div class="close-menu" onclick="myFunction(this)">
+                        <div class="close-menu__bar1"></div>
+                        <div class="close-menu__bar2"></div>
+                    </div>
                 </nav>
             </div>
             <nav class="nav">
@@ -55,7 +62,7 @@
                 <div class="hero__info">
                     <h1 class="hero__title">Дарья Воронина</h1>
                     <p class="hero__descr">Food — фотограф и food — стилист в&nbsp;Москве и Московской области</p>
-                    <button class="hero__btn btn">Портфолио</button>
+                    <button class="hero__btn btn"><a href="#works">Портфолио</a></button>
                 </div>
                 <picture>
                     <source media="(max-width:700px)" srcset="img/woman-phone.jpg">
@@ -64,7 +71,7 @@
                 </picture>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="works">
             <div class="portfolio__container container">
                 <h2 class="portfolio__title title">Портфолио</h2>
                 <ul class="portfolio__list">
@@ -114,7 +121,7 @@
                 <h3 class="portfolio-detailed__title">Подробное портфолио</h3>
                 <p class="portfolio-detailed__descr">С описанием задач заказчика, полного процесса работы
                     и&nbsp;финальным результатом</p>
-                <button class="portfolio-detailed__btn btn">Скачать в pdf</button>
+                <button class="portfolio-detailed__btn btn"><a href="#" download="#">Скачать в pdf</a></button>
             </div>
         </section>
         <section class="about" id="about">
@@ -130,7 +137,7 @@
                     </div>
                     <div class="about__descr-right">
                         <p class="about__descr">Tel.: + 7 916 66 77 112 Mail:&nbsp;daria.voronina@gmail.com</p>
-                        <button class="about__btn btn">Работать со мной</button>
+                        <button class="about__btn btn"><a type="email" href="mailto:daria.voronina@gmail.com">Работать со мной</a></button>
                     </div>
                 </div>
             </div>
@@ -193,7 +200,7 @@
                     </li>
                     <li class="footer__item">
                         <span class="footer__item-email">E-mail</span>
-                        <a type="email" href="https://www.gmail.com/" class="footer__email">daria.voronina@gmail.com</a>
+                        <a type="email" href="mailto:daria.voronina@gmail.com" class="footer__email">daria.voronina@gmail.com</a>
                     </li>
                     <li class="footer__item">
                         <span class="footer__item-phone">Phone</span>

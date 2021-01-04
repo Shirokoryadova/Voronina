@@ -224,7 +224,8 @@
     }
 
     .price__descr-3 {
-        width: 180px;
+        width: 202px;
+        margin: 0 auto;
     }
 
     .price__item-title-3::before {
@@ -414,6 +415,9 @@
         left: unset;
         right: 15px;
         top: 5px;
+    }
+
+    .header__burger {
         transform: scale(-1, 1);
     }
 
@@ -421,6 +425,34 @@
     .bar2,
     .bar3 {
         background-color: #fff;
+    }
+
+    .header__dropdown-nav {
+        height: 150vw;
+        background: #f8f8f8;
+    }
+
+    .header__dropdown-list {
+        padding-top: 141px;
+    }
+
+    .header__dropdown-link {
+        font-size: 21px;
+    }
+
+    .header__dropdown-item {
+        margin-bottom: 54px;
+    }
+
+    .close-menu {
+        top: 5px;
+        right: 18px;
+    }
+
+    .close-menu__bar1,
+    .close-menu__bar2 {
+        right: 0;
+        width: 19px;
     }
 
     .hero {

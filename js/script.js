@@ -6,14 +6,17 @@ function myFunction(x) {
 $(function () {
     //Dropdown toggle
     $('.header__burger').on('click', function () {
-        $(this).next('.header__dropdown-list').toggle();
+        $(this).next('.header__dropdown-nav').toggle(300);
+        $('body').css('overflow', 'hidden');
     });
-
-    function handler(e) {
-        let target = $(e.target);
-        if (target.is('.header__burger')) {
-            target.children().toggle();
-        }
-    }
-    $('.header__dropdown-list').click(handler).find('.header__dropdown-list').hide();
+    $('.close-menu').on('click', function () {
+        $('.header__dropdown-nav').css('display', 'none');
+        $('body').css('overflow', 'unset');
+    });
+    $('.header__dropdown-link').on('click', function () {
+        $('.header__dropdown-nav').css('display', 'none');
+        $('body').css('overflow', 'unset');
+    });
 });
+
+
