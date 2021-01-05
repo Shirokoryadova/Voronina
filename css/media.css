@@ -428,7 +428,7 @@
     }
 
     .header__dropdown-nav {
-        height: 150vw;
+        height: 100vw;
         background: #f8f8f8;
     }
 
@@ -920,11 +920,14 @@
 
     .footer__socials-link:not(:last-child) {
         margin-right: 26px;
-    }
-    
+    } 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
+    .header__dropdown-nav {
+        height: 180vw;
+    }
+
     .portfolio-detailed {
         background: url(../img/portfolio-detailed-phone.png) no-repeat center 44px #fff;
         background-size: unset;
