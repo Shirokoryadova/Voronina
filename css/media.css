@@ -561,7 +561,7 @@
     }
 
     .portfolio-detailed {
-        background: url(/img/portfolio-detailed-phone.png) no-repeat 0 44px #fff;
+        background: url(../img/portfolio-detailed-phone.png) no-repeat 0 44px #fff;
     }
 
     .portfolio-detailed__container {
@@ -589,7 +589,7 @@
 
     .portfolio-detailed__descr::after {
         position: absolute;
-        content: url(/img/pdf-phone.png);
+        content: url(../img/pdf-phone.png);
         top: 79px;
         left: 188px;
     }

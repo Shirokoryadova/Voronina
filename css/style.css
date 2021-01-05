@@ -405,7 +405,7 @@ ul {
 
 .portfolio-detailed__descr::before {
     position: absolute;
-    content: url(img/detailed-portfolio-leaf.png);
+    content: url(../img/detailed-portfolio-leaf.png);
     top: -86px;
     left: 570px;
 }
